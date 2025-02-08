@@ -55,15 +55,7 @@ engines:
 translator:
   enable_sentence: true
   enable_user_dict: true
-  dictionary: wanxiang-chars
-  packs:
-    - wanxiang-base
-    - wanxiang-correlation
-    - wanxiang-associational
-    - wanxiang-compatible
-    - wanxiang-people
-    - wanxiang-place
-    - wanxiang-poetry
+  dictionary: wanxiang
   db_class: userdb
   spelling_hints: 8
   always_show_comments: true
@@ -117,7 +109,7 @@ reverse_library:
 double_pinyin_reverse_lookup:
   tags: [ stroke ]
   overwrite_comment: false
-  dictionary: wanxiang-chars
+  dictionary: wanxiang
 
 grammar:
   language: wanxiang-lts-zh-hans
