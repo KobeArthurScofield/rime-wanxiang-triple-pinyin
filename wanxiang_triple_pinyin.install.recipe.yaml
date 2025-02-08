@@ -1,0 +1,16 @@
+# encoding: utf-8
+---
+recipe:
+  Rx: rime-longma-tone
+  description: >-
+    萬象詞庫聲調三拼輸入法
+
+install_files: >-
+  wanxiang_triple_pinyin.share.yaml
+  wanxiang_triple_pinyin.*.schema.yaml
+  wanxiang-chars.dict.yaml
+  wanxiang-base.dict.yaml
+  wanxiang-correlation.dict.yaml
+  wanxiang-associational.dict.yaml
+  wanxiang-compatible.dict.yaml
+  wanxiang-lts-zh-hans.gram

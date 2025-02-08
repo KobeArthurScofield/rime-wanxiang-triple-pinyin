@@ -1,0 +1,145 @@
+# Rime schema
+# encoding: utf-8
+
+schema:
+  schema_id: wanxiang_triple_pinyin.zrm
+  name: 自然碼聲調三鍵拼
+  version: "0.08"
+  author:
+    - 佛振 <chen.sst@gmail.com>
+    - Kobe Arthur Scofield
+  description: |
+    萬象詞庫＋自然碼雙拼方案。
+    以主鍵盤區域上 6-0 鍵於音節末尾處輸入音調。其中 6 爲陰平（第一聲），7 爲陽平（第二聲），8 爲上聲（第三聲），9 爲去聲（第四聲），0 爲輕聲。
+  dependencies:
+    - stroke
+
+switches:
+  __include: wanxiang_triple_pinyin.share.yaml:/switches
+
+engine:
+  __include: wanxiang_triple_pinyin.share.yaml:/engines
+
+speller:
+  alphabet: zyxwvutsrqponmlkjihgfedcba67890
+  finals: '67890'
+  delimiter: " '"
+  algebra:
+    __patch:
+      - wanxiang_triple_pinyin.share.yaml:/prism_preprocess
+      - /prism_alb
+
+translator:
+  __include: wanxiang_triple_pinyin.share.yaml:/translator
+  prism: wanxiang_triple_pinyin.zrm
+  preedit_format:
+    __patch:
+      - /preconvert
+      - wanxiang_triple_pinyin.share.yaml:/preedit_fmt
+
+punctuator:
+  __include: wanxiang_triple_pinyin.share.yaml:/punctuator
+
+key_binder:
+  __include: wanxiang_triple_pinyin.share.yaml:/key_binder
+
+recognizer:
+  __include: wanxiang_triple_pinyin.share.yaml:/recognizer
+
+zh_trad:
+  __include: wanxiang_triple_pinyin.share.yaml:/trad_simp_convert/zh_trad
+
+zh_tw:
+  __include: wanxiang_triple_pinyin.share.yaml:/trad_simp_convert/zh_tw
+
+zh_hk:
+  __include: wanxiang_triple_pinyin.share.yaml:/trad_simp_convert/zh_hk
+
+zh_simp:
+  __include: wanxiang_triple_pinyin.share.yaml:/trad_simp_convert/zh_simp
+
+zh_cn:
+  __include: wanxiang_triple_pinyin.share.yaml:/trad_simp_convert/zh_cn
+
+stroke:
+  __include: wanxiang_triple_pinyin.share.yaml:/reverse_library/stroke?
+
+double_pinyin_reverse_lookup:
+  __include: wanxiang_triple_pinyin.share.yaml:/double_pinyin_reverse_lookup?
+
+grammar:
+  __include: wanxiang_triple_pinyin.share.yaml:/grammar
+
+menu:
+  __include: wanxiang_triple_pinyin.share.yaml:/menu
+
+prism_alb:
+  __append:
+    - derive/^([jqxy])u([12345])$/$1v$2/
+    - derive/^([aoe])([ioun])([12345])$/$1$1$2$3/
+    - xform/^([aoe])(ng)?([12345])$/$1$1$2$3/
+    - xform/iu([12345])$/Q$1/
+    - xform/[iu]a([12345])$/W$1/
+    - xform/[uv]an([12345])$/R$1/
+    - xform/[uv]e([12345])$/T$1/
+    - xform/ing([12345])$|uai([12345])$/Y$1/
+    - xform/^sh/U/
+    - xform/^ch/I/
+    - xform/^zh/V/
+    - xform/uo([12345])$/O$1/
+    - xform/[uv]n([12345])$/P$1/
+    - xform/i?ong([12345])$/S$1/
+    - xform/[iu]ang([12345])$/D$1/
+    - xform/(.)en([12345])$/$1F$2/
+    - xform/(.)eng([12345])$/$1G$2/
+    - xform/(.)ang([12345])$/$1H$2/
+    - xform/ian([12345])$/M$1/
+    - xform/(.)an([12345])$/$1J$2/
+    - xform/iao([12345])$/C$1/
+    - xform/(.)ao([12345])$/$1K$2/
+    - xform/(.)ai([12345])$/$1L$2/
+    - xform/(.)ei([12345])$/$1Z$2/
+    - xform/ie([12345])$/X$1/
+    - xform/ui([12345])$/V$1/
+    - xform/(.)ou([12345])$/$1B$2/
+    - xform/in([12345])$/N$1/
+    - xform/1/6/
+    - xform/2/7/
+    - xform/3/8/
+    - xform/4/9/
+    - xform/5/0/
+    - xlit/QWRTYUIOPSDFGHMJCKLZXVBN/qwrtyuiopsdfghmjcklzxvbn/
+    - abbrev/^(.).+$/$1/
+
+preconvert:
+  __append:
+    - xform/([bpmnljqxy])n/$1in/
+    - xform/(\w)g/$1eng/
+    - xform/(\w)q/$1iu/
+    - xform/([gkhvuirzcs])w/$1ua/
+    - xform/(\w)w/$1ia/
+    - xform/([dtnlgkhjqxyvuirzcs])r/$1uan/
+    - xform/(\w)t/$1ve/
+    - xform/([gkhvuirzcs])y/$1uai/
+    - xform/(\w)y/$1ing/
+    - xform/([dtnlgkhvuirzcs])o/$1uo/
+    - xform/(\w)p/$1un/
+    - xform/([jqx])s/$1iong/
+    - xform/(\w)s/$1ong/
+    - xform/([jqxnl])d/$1iang/
+    - xform/(\w)d/$1uang/
+    - xform/(\w)f/$1en/
+    - xform/(\w)h/$1ang/
+    - xform/(\w)j/$1an/
+    - xform/(\w)k/$1ao/
+    - xform/(\w)l/$1ai/
+    - xform/(\w)z/$1ei/
+    - xform/(\w)x/$1ie/
+    - xform/(\w)c/$1iao/
+    - xform/([dtgkhvuirzcs])v/$1ui/
+    - xform/(\w)b/$1ou/
+    - xform/(\w)m/$1ian/
+    - xform/([aoe])\1(\w)/$1$2/
+    - "xform/(^|[ '])v/$1zh/"
+    - "xform/(^|[ '])i/$1ch/"
+    - "xform/(^|[ '])u/$1sh/"
