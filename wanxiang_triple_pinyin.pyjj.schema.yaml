@@ -4,7 +4,7 @@
 schema:
   schema_id: wanxiang_triple_pinyin.pyjj
   name: 拼音加加聲調三鍵拼
-  version: "0.08"
+  version: "0.09"
   author:
     - 佛振 <chen.sst@gmail.com>
     - Ye Zhou

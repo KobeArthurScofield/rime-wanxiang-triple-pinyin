@@ -4,7 +4,7 @@
 schema:
   schema_id: wanxiang_triple_pinyin.flypy
   name: 小鶴聲調三鍵拼
-  version: "0.08"
+  version: "0.09"
   author:
     - double pinyin layout by 鶴
     - Rime schema by 佛振 <chen.sst@gmail.com>

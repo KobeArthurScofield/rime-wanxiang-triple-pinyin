@@ -4,7 +4,7 @@
 schema:
   schema_id: wanxiang_triple_pinyin.mspy
   name: MSPY聲調三鍵拼
-  version: "0.08"
+  version: "0.09"
   author:
     - 佛振 <chen.sst@gmail.com>
     - Kobe Arthur Scofield
