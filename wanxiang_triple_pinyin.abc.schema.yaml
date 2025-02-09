@@ -107,6 +107,8 @@ prism_alb:
     - xform/4/9/
     - xform/5/0/
     - xlit/QWERTYOPASDFGHJKLZXCVBNM/qwertyopasdfghjklzxcvbnm/
+    - abbrev/^(.)(.).+$/$1$2/
+    - abbrev/^(.).+$/$1/
 
 preconvert:
   __append:

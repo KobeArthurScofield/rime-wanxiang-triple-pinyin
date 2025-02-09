@@ -109,6 +109,7 @@ prism_alb:
     - xform/4/9/
     - xform/5/0/
     - xlit/QWRTYUIOPSDFGHMJCKLZXVBN/qwrtyuiopsdfghmjcklzxvbn/
+    - abbrev/^(.)(.).+$/$1$2/
     - abbrev/^(.).+$/$1/
 
 preconvert:
