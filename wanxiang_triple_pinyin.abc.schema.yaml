@@ -22,6 +22,7 @@ engine:
 
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba67890
+  initials: zyxwvtsrqponmlkjhgfedcba
   finals: '67890'
   delimiter: " '"
   algebra:
@@ -108,7 +109,6 @@ prism_alb:
     - xform/5/0/
     - xlit/QWERTYOPASDFGHJKLZXCVBNM/qwertyopasdfghjklzxcvbnm/
     - abbrev/^(.)(.).+$/$1$2/
-    - abbrev/^(.).+$/$1/
 
 preconvert:
   __append:
