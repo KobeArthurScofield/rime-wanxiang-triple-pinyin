@@ -125,13 +125,6 @@ menu:
 
 prism_preprocess:
   __append:
-    - xform/ń/én/
-    - xform/ň/ěn/
-    - xform/ǹ/ěn/
-    - xform/\bng\b/eng/
-    - xform/ńg/éng/
-    - xform/ňg/ěng/
-    - xform/ṅg/èng/
     - xform/^([a-zA-Z]+)$/$1轻/
     - xform/^(.*)ā(.*)$/$1a$2阴/
     - xform/^(.*)á(.*)$/$1a$2阳/

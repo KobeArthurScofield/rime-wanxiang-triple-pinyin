@@ -3,7 +3,7 @@
 
 schema:
   schema_id: wanxiang_triple_pinyin.pyjj
-  name: 拼音加加聲調三鍵拼
+  name: 拼音加加聲調三拼
   version: "0.09"
   author:
     - 佛振 <chen.sst@gmail.com>
@@ -90,21 +90,20 @@ prism_alb:
     - xform/^zh/V/
     - xform/uo([12345])$/O$1/
     - xform/[uv]n([12345])$/Z$1/
-    - xform/iong([12345])$/Y$1/
-    - xform/ong([12345])$/Y$1/
+    - xform/i?ong([12345])$/Y$1/
     - xform/[iu]ang([12345])$/H$1/
-    - xform/en([12345])$/R$1/
-    - xform/eng([12345])$/T$1/
-    - xform/ang([12345])$/G$1/
+    - xform/(.)en([12345])$/$1R$2/
+    - xform/(.)eng([12345])$/$1T$2/
+    - xform/(.)ang([12345])$/$1G$2/
     - xform/ian([12345])$/J$1/
-    - xform/an([12345])$/F$1/
+    - xform/(.)an([12345])$/$1F$2/
     - xform/iao([12345])$/K$1/
-    - xform/ao([12345])$/D$1/
-    - xform/ai([12345])$/S$1/
-    - xform/ei([12345])$/W$1/
+    - xform/(.)ao([12345])$/$1D$2/
+    - xform/(.)ai([12345])$/$1S$2/
+    - xform/(.)ei([12345])$/$1W$2/
     - xform/ie([12345])$/M$1/
     - xform/ui([12345])$/V$1/
-    - xform/ou([12345])$/P$1/
+    - xform/(.)ou([12345])$/$1P$2/
     - xform/in([12345])$/L$1/
     - xlit/QWRTYUIOPSDFGHMJCKLZXVBN/qwrtyuiopsdfghmjcklzxvbn/
     - xlit/12345/67890/

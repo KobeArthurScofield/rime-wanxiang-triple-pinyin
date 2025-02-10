@@ -3,7 +3,7 @@
 
 schema:
   schema_id: wanxiang_triple_pinyin.abc
-  name: 智能ABC聲調三鍵拼
+  name: 智能ABC聲調三拼
   version: "0.09"
   author:
     - 佛振 <chen.sst@gmail.com>
@@ -88,8 +88,7 @@ prism_alb:
     - xform/ing([12345])$/Y$1/
     - xform/uo([12345])$/O$1/
     - xform/uan([12345])$/P$1/
-    - xform/iong([12345])$/S$1/
-    - xform/ong([12345])$/S$1/
+    - xform/i?ong([12345])$/S$1/
     - xform/[iu]a([12345])$/D$1/
     - xform/en([12345])$/F$1/
     - xform/eng([12345])$/G$1/
