@@ -158,7 +158,7 @@ prism_preprocess:
     - xform/^(.*)ǚ(.*)$/$1v$2③/
     - xform/^(.*)ǜ(.*)$/$1v$2④/
     - xform/^(.*)ü(.*)$/$1v$2/
-    - xlit/①②③④⑤/12345
+    - xlit/①②③④⑤/12345/
 
 preedit_fmt:
   __append:
