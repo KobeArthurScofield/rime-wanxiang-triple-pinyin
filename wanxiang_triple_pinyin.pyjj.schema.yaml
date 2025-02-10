@@ -82,9 +82,9 @@ prism_alb:
     - xform/^([ae])(.*)$/$1$1$2/
     - xform/iu([12345])$/N$1/
     - xform/[iu]a([12345])$/B$1/
-    - xform/er([12345])$|ing([12345])$/Q$1/
+    - xform/er([12345])$|ing([12345])$/Q$1$2/
     - xform/[uv]an([12345])$/C$1/
-    - xform/[uv]e([12345])$|uai([12345])$/X$1/
+    - xform/[uv]e([12345])$|uai([12345])$/X$1$2/
     - xform/^sh/I/
     - xform/^ch/U/
     - xform/^zh/V/

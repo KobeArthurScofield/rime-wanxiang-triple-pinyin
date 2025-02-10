@@ -83,7 +83,7 @@ prism_alb:
     - xform/^([aoe].*)$/O$1/
     - xform/ei([12345])$/Q$1/
     - xform/ian([12345])$/W$1/
-    - xform/er([12345])$|iu([12345])$/R$1/
+    - xform/er([12345])$|iu([12345])$/R$1$2/
     - xform/[iu]ang([12345])$/T$1/
     - xform/ing([12345])$/Y$1/
     - xform/uo([12345])$/O$1/
@@ -96,12 +96,12 @@ prism_alb:
     - xform/an([12345])$/J$1/
     - xform/iao([12345])$/Z$1/
     - xform/ao([12345])$/K$1/
-    - xform/in([12345])$|uai([12345])$/C$1/
+    - xform/in([12345])$|uai([12345])$/C$1$2/
     - xform/ai([12345])$/L$1/
     - xform/ie([12345])$/X$1/
     - xform/ou([12345])$/B$1/
     - xform/un([12345])$/N$1/
-    - xform/[uv]e([12345])$|ui([12345])$/M$1/
+    - xform/[uv]e([12345])$|ui([12345])$/M$1$2/
     - xlit/QWERTYOPASDFGHJKLZXCVBNM/qwertyopasdfghjklzxcvbnm/
     - xlit/12345/67890/
     - abbrev/^(.)(.).+$/$1$2/
