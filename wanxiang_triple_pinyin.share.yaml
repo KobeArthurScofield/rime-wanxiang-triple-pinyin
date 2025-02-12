@@ -205,8 +205,9 @@ style:
     margin_x: 4
     margin_y: 4
     candidate_spacing: 8
-    hilite_spacing: 2
-    hilite_padding: 2
+    hilite_spacing: 4
+    hilite_padding_x: 4
+    hilite_padding_y: 1
   candidate_list_layout: linear
   inline_candidate: true
   memorize_size: true
