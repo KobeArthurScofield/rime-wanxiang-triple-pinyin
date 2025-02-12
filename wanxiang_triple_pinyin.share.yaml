@@ -201,12 +201,12 @@ style:
   enhanced_position: true
   hover_type: semi_hilite
   layout:
-    border_width: 2
+    border_width: 1
     margin_x: 4
     margin_y: 4
     candidate_spacing: 8
     hilite_spacing: 4
-    hilite_padding_x: 4
+    hilite_padding_x: 2
     hilite_padding_y: 1
   candidate_list_layout: linear
   inline_candidate: true
