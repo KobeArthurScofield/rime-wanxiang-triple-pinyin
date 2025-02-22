@@ -150,21 +150,20 @@ prism_preprocess:
     - xform/^(.*)ǘ(.*)$/$1v$2阳/
     - xform/^(.*)ǚ(.*)$/$1v$2上/
     - xform/^(.*)ǜ(.*)$/$1v$2去/
-    - xform/^(.*)ü(.*)$/$1v$2/
+    - xform/^(.*)ü(.*)$/$1v$2轻/
     - xlit/阴阳上去轻/12345/
 
 preedit_fmt:
   __append:
     - xlit/67890/12345/
-    - xform/0(\w)/$1/
     - xform/([nl])v/$1ü/
     - xform/([jqxy])v/$1u/
     - xform/([nl])ue/$1üe/
     - xform/([nl])üen/$1uen/
     - xform/5/·/
-    - xform/eh[0-5]?/ê/
-    - 'xform ([aeiou])(ng?|r)([12345]) $1$3$2'
-    - 'xform ([aeo])([iuo])([12345]) $1$3$2'
+    - xform/eh[1-5]?/ê/
+    - 'xform ([aeiou])(ng?|r)([1-5]) $1$3$2'
+    - 'xform ([aeo])([iuo])([1-5]) $1$3$2'
     - 'xform a1 ā'
     - 'xform a2 á'
     - 'xform a3 ǎ'
@@ -189,4 +188,4 @@ preedit_fmt:
     - 'xform ü2 ǘ'
     - 'xform ü3 ǚ'
     - 'xform ü4 ǜ'
-    - xform/[0-5]//
+    - xform/[1-5]//

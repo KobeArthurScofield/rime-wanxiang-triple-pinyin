@@ -4,7 +4,7 @@
 schema:
   schema_id: wanxiang_triple_pinyin.pyjj
   name: 拼音加加聲調三拼
-  version: "0.09"
+  version: "0.10"
   author:
     - 佛振 <chen.sst@gmail.com>
     - Ye Zhou
@@ -77,34 +77,34 @@ menu:
 
 prism_alb:
   __append:
-    - derive/^([jqxy])u([12345])$/$1v$2/
+    - derive/^([jqxy])u([1-5])$/$1v$2/
     - derive/^([aoe].*)$/o$1/
     - xform/^([ae])(.*)$/$1$1$2/
-    - xform/iu([12345])$/N$1/
-    - xform/[iu]a([12345])$/B$1/
-    - xform/er([12345])$|ing([12345])$/Q$1$2/
-    - xform/[uv]an([12345])$/C$1/
-    - xform/[uv]e([12345])$|uai([12345])$/X$1$2/
+    - xform/iu([1-5])$/N$1/
+    - xform/[iu]a([1-5])$/B$1/
+    - xform/er([1-5])$|ing([1-5])$/Q$1$2/
+    - xform/[uv]an([1-5])$/C$1/
+    - xform/[uv]e([1-5])$|uai([1-5])$/X$1$2/
     - xform/^sh/I/
     - xform/^ch/U/
     - xform/^zh/V/
-    - xform/uo([12345])$/O$1/
-    - xform/[uv]n([12345])$/Z$1/
-    - xform/i?ong([12345])$/Y$1/
-    - xform/[iu]ang([12345])$/H$1/
-    - xform/(.)en([12345])$/$1R$2/
-    - xform/(.)eng([12345])$/$1T$2/
-    - xform/(.)ang([12345])$/$1G$2/
-    - xform/ian([12345])$/J$1/
-    - xform/(.)an([12345])$/$1F$2/
-    - xform/iao([12345])$/K$1/
-    - xform/(.)ao([12345])$/$1D$2/
-    - xform/(.)ai([12345])$/$1S$2/
-    - xform/(.)ei([12345])$/$1W$2/
-    - xform/ie([12345])$/M$1/
-    - xform/ui([12345])$/V$1/
-    - xform/(.)ou([12345])$/$1P$2/
-    - xform/in([12345])$/L$1/
+    - xform/uo([1-5])$/O$1/
+    - xform/[uv]n([1-5])$/Z$1/
+    - xform/i?ong([1-5])$/Y$1/
+    - xform/[iu]ang([1-5])$/H$1/
+    - xform/(.)en([1-5])$/$1R$2/
+    - xform/(.)eng([1-5])$/$1T$2/
+    - xform/(.)ang([1-5])$/$1G$2/
+    - xform/ian([1-5])$/J$1/
+    - xform/(.)an([1-5])$/$1F$2/
+    - xform/iao([1-5])$/K$1/
+    - xform/(.)ao([1-5])$/$1D$2/
+    - xform/(.)ai([1-5])$/$1S$2/
+    - xform/(.)ei([1-5])$/$1W$2/
+    - xform/ie([1-5])$/M$1/
+    - xform/ui([1-5])$/V$1/
+    - xform/(.)ou([1-5])$/$1P$2/
+    - xform/in([1-5])$/L$1/
     - xlit/QWRTYUIOPSDFGHMJCKLZXVBN/qwrtyuiopsdfghmjcklzxvbn/
     - xlit/12345/67890/
     - abbrev/^(.)(.).+$/$1$2/
