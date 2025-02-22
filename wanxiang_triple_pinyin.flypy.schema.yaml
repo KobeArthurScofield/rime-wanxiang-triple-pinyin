@@ -75,6 +75,9 @@ grammar:
 menu:
   __include: wanxiang_triple_pinyin.share.yaml:/menu
 
+style:
+  __include: wanxiang_triple_pinyin.share.yaml:/style?
+
 prism_alb:
   __append:
     - derive/^([jqxy])u(1-5)$/$1v$2/

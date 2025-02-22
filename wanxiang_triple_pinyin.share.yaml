@@ -189,3 +189,28 @@ preedit_fmt:
     - 'xform ü3 ǚ'
     - 'xform ü4 ǜ'
     - xform/[1-5]//
+
+style:
+  font_point: 12
+  label_font_point: 12
+  comment_font_point: 12
+  horizontal: true
+  inline_preedit: true
+  mark_text: ""
+  enhanced_position: true
+  hover_type: semi_hilite
+  layout:
+    border_width: 1
+    margin_x: 12
+    margin_y: 10
+    spacing: 14
+    candidate_spacing: 10
+    corner_radius: 6
+    hilite_spacing: 10
+    hilite_padding: 5
+    hilite_padding_x: 7
+    hilite_padding_y: 6
+    round_corner: 6
+  candidate_list_layout: linear
+  inline_candidate: true
+  memorize_size: true
