@@ -125,6 +125,36 @@ menu:
 
 prism_preprocess:
   __append:
+    - derive/ê̄/ē/
+    - derive/ế/é/
+    - derive/ê̌/ě/
+    - derive/ề/è/
+    - derive/ê/e/
+    - derive/ê̄/ēh/
+    - derive/ế/éh/
+    - derive/ê̌/ěh/
+    - derive/ề/èh/
+    - derive/ê/eh/
+    - derive/^m̄$/mū/
+    - derive/^ḿ$/mú/
+    - derive/^m̌$/mǔ/
+    - derive/^m̀$/mù/
+    - derive/^m$/mu/
+    - derive/^(.)m̄$/$1ū/
+    - derive/^(.)ḿ$/$1ú/
+    - derive/^(.)m̌$/$1ǔ/
+    - derive/^(.)m̀$/$1ù/
+    - derive/^(.)m$/$1u/
+    - derive/n̄$/ēn/
+    - derive/ń$/én/
+    - derive/ň$/ěn/
+    - derive/ǹ$/èn/
+    - derive/^n$/en/
+    - derive/n̄g$/ēng/
+    - derive/ńg$/éng/
+    - derive/ňg$/ěng/
+    - derive/ǹg$/èng/
+    - derive/^(h)?ng$/$1eng/
     - xform/^([a-zA-Z]+)$/$1轻/
     - xform/^(.*)ā(.*)$/$1a$2阴/
     - xform/^(.*)á(.*)$/$1a$2阳/
